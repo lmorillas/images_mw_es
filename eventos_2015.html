@@ -18,7 +18,6 @@
     </style>
     <script>
     function muestra_evento(rec) {
-        console.log("Mostrando ...");
         var itemID = rec.getAttribute("itemid");
         var fotos = rec.getAttribute("fotos");
         fotos = fotos.split(";");
@@ -38,9 +37,6 @@
             images += '<div class="item"><img src="' + fotos[i] + '" alt="' + labels[i] + '"> </div>';
         }
         jQuery(pos).append(inicio + cuerpo + images + '</div>' + fin);
-        jQuery('.carousel').carousel({
-            interval: 2000
-        });
     }
     </script>
 </head>
